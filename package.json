@@ -1,0 +1,12 @@
+{
+  "name": "@workspace/root",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter @workspace/api-server run dev & pnpm --filter @workspace/bot-dashboard run dev",
+    "build": "pnpm --filter @workspace/api-server run build && pnpm --filter @workspace/bot-dashboard run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
